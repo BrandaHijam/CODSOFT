@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="task3.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Simple Calculator</h1>
+        <input class="display-box" type="text" id="result" disabled />
+        <table>
+            <tr>
+                <td colspan="3">
+                    <button class="clear-btn" onclick="clearScreen()">Clear</button>
+                </td>
+                <td>
+                    <button onclick="display('+')">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td><button onclick="display('1')">1</button></td>
+                <td><button onclick="display('2')">2</button></td>
+                <td><button onclick="display('3')">3</button></td>
+                <td><button onclick="display('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="display('4')">4</button></td>
+                <td><button onclick="display('5')">5</button></td>
+                <td><button onclick="display('6')">6</button></td>
+                <td><button onclick="display('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="display('7')">7</button></td>
+                <td><button onclick="display('8')">8</button></td>
+                <td><button onclick="display('9')">9</button></td>
+                <td><button onclick="display('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="display('.')">.</button></td>
+                <td><button onclick="display('0')">0</button></td>
+                <td colspan="2">
+                    <button class="equals-btn" onclick="calculate()">=</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function clearScreen() {
+            document.getElementById("result").value = "";
+        }
+
+        function display(value) {
+            document.getElementById("result").value += value;
+        }
+
+        function calculate() {
+            const resultElement = document.getElementById("result");
+            try {
+                resultElement.value = eval(resultElement.value);
+            } catch (error) {
+                resultElement.value = "Error";
+            }
+        }
+    </script>
+</body>
+
+</html>
