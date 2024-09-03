@@ -1,1 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 15px 0;
+    color: #fff;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url("images/logo.webp");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero .cta-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #ff4b2b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.services {
+    background-color: #f8f8f8;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.services .service-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.services .service-item {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services .service-item h3 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.services .service-item p {
+    font-size: 28px;
+}
+
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 45px;
+    margin-bottom: 10px; 
+}
+
+.about p {
+    font-size: 26px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.portfolio {
+    background-color: #e6e3e3;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.portfolio .portfolio-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio .portfolio-item {
+    width: 30%;
+}
+
+.portfolio .portfolio-item img {
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.portfolio .portfolio-item p {
+    margin-top: 10px;
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact .cta-btn {
+    padding: 10px 30px;
+    background-color: #ff4b2b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
 
