@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9eef3;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #007acc, #005fa3);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 3.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefefe;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-container img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin-right: 40px;
+    border: 4px solid #007acc;
+}
+
+.bio {
+    max-width: 600px;
+    text-align: left;
+}
+
+.bio h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #007acc;
+}
+
+.bio p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills ul li {
+    display: inline-block;
+    background-color: #007acc;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+#skills ul li:hover {
+    background-color: #005fa3;
+}
+
+.project {
+    margin: 40px 0;
+}
+
+.project h2 {
+    font-size: 13em;
+    margin-bottom: 15px;
+    color: #323030;
+}
+.project h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.project p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}
